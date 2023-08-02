@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FashionGit - Item</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="item.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container-fluid">
+        <a href="index.html">
+          <img src="images/logo(white).png" alt="Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="wishlist.html">
+                <i class="fas fa-heart"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="login.html">
+                <i class="fas fa-user"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="container s-product mx-auto">
+      <div class="row" id="itemDescContainer"></div>
+    </section>
+
+    <section class="my-5">
+      <div class="container text-center mt-5 py-5">
+        <h3>You May Also Like</h3>
+        <hr class="mx-auto" />
+      </div>
+
+      <div class="container-fluid row mx-auto">
+        <div class="col-12 col-md-3">
+          <div class="product text-center">
+            <figure class="product-media">
+              <a href="#" onclick="currItemPage(products[7])">
+                <img src="images/suit-1-c-1.jpg" alt="" class="product-image" />
+              </a>
+            </figure>
+            <div class="product-body">
+              <div class="product-cat">
+                <a href="#">Suits</a>
+              </div>
+              <h3 class="product-title">
+                <a href="#" onclick="currItemPage(products[7])"
+                  >Italian craftsmanship couples with rich virgin wool to create
+                  this polished suit</a
+                >
+              </h3>
+              <div class="product-price">$399.99</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="product text-center">
+            <figure class="product-media">
+              <a href="#" onclick="currItemPage(products[8])">
+                <img
+                  src="images/high-heel-2-c-1.jpg"
+                  alt=""
+                  class="product-image"
+                />
+              </a>
+            </figure>
+            <div class="product-body">
+              <div class="product-cat">
+                <a href="#">High-Heels</a>
+              </div>
+              <h3 class="product-title">
+                <a href="#" onclick="currItemPage(products[8])"
+                  >Shimmery fabric highlights the slender straps on an
+                  event-ready sandal</a
+                >
+              </h3>
+              <div class="product-price">$59.99</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="product text-center">
+            <figure class="product-media">
+              <a href="#" onclick="currItemPage(products[1])">
+                <img src="images/jean-1-c-1.jpg" alt="" class="product-image" />
+              </a>
+            </figure>
+            <div class="product-body">
+              <div class="product-cat">
+                <a href="#">Jeans</a>
+              </div>
+              <h3 class="product-title">
+                <a href="#" onclick="currItemPage(products[1])"
+                  >With a saturated dark wash and a slim bootcut shape, these
+                  jeans are polished for day or night</a
+                >
+              </h3>
+              <div class="product-price">$69.99</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="product text-center">
+            <figure class="product-media">
+              <a href="#" onclick="currItemPage(products[6])">
+                <img
+                  src="images/sneaker-1-c-1.jpg"
+                  alt=""
+                  class="product-image"
+                />
+              </a>
+            </figure>
+            <div class="product-body">
+              <div class="product-cat">
+                <a href="#">Sneakers</a>
+              </div>
+              <h3 class="product-title">
+                <a href="#" onclick="currItemPage(products[6])"
+                  >Heritage details meet modern attitude in a '70s</a
+                >
+              </h3>
+              <div class="product-price">$59.99</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="product.html">Shopping</a></li>
+              <li><a href="profile.html">Delivery</a></li>
+              <li><a href="cart.html">Payment</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3>About</h3>
+            <ul>
+              <li><a href="aboutus.html">Company</a></li>
+              <li><a href="aboutus.html">Team</a></li>
+              <li><a href="aboutus.html">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <h3>FashionGit</h3>
+            <p>
+              With an extensive collection of the latest clothings, Fashiongit
+              caters to fashion-forward individuals who seek to express their
+              style with confidence. Contact us by -<br />
+              Phone: +09 122 223 1224 <br />
+              Email: fashiongit@support.com
+            </p>
+          </div>
+          <div class="col item social">
+            <a href="https://www.facebook.com"
+              ><i class="icon ion-social-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com"
+              ><i class="icon ion-social-twitter"></i
+            ></a>
+            <a href="https://www.snapchat.com"
+              ><i class="icon ion-social-snapchat"></i
+            ></a>
+            <a href="https://www.instagram.com"
+              ><i class="icon ion-social-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <p class="copyright">FashionGit © 2018</p>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      displayItemDesc();
+    </script>
+  </body>
+</html>

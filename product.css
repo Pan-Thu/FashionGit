@@ -1,0 +1,349 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* <---Navigation Bar--- >  */
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  background-color: #343a40;
+}
+.container-fluid {
+  padding-left: 2rem;
+  padding-right: 5rem;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+}
+.navbar-nav {
+  font-size: 20px;
+}
+.navbar-nav .nav-item .nav-link {
+  transition: 0.1s ease;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #c96;
+}
+.navbar-nav > .nav-item:nth-child(-n + 3) {
+  padding-right: 30px;
+}
+.navbar-nav .nav-link .fas {
+  font-size: 25px;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+#searchInput {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Content */
+.main-content {
+  margin: 7rem auto 1rem auto;
+}
+
+/* Product */
+.product {
+  position: relative;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.35s ease;
+  background-color: #fff;
+}
+.product:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+.product-media {
+  margin-bottom: 0;
+}
+.product-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.product-body {
+  position: relative;
+  padding: 1.6rem 2rem;
+  background-color: #fff;
+}
+.product-title {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+.product-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.product-title a:hover,
+.product-title a:focus {
+  color: #c96;
+}
+.product-cat {
+  color: #777;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.3rem;
+}
+.product-cat a {
+  color: inherit;
+}
+.product-cat a:hover,
+.product-cat a:focus {
+  color: #666;
+}
+.product-price {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  color: #c96;
+  margin-bottom: 1.3rem;
+}
+.pagination {
+  border-radius: 0;
+  align-items: center;
+}
+.page-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+  height: 4rem;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0 0.3rem;
+  line-height: 1;
+  color: #706f6c;
+  border-radius: 0.3rem;
+  background-color: transparent;
+  border: 0.1rem solid transparent;
+  cursor: pointer;
+}
+.page-link:hover,
+.page-link:focus .page-link:active {
+  box-shadow: none;
+  color: #c96;
+  border-color: #ebebeb;
+  background-color: transparent;
+}
+
+/* <---Sidebar---> */
+.widget {
+  color: #333333;
+  margin: 0 0 2rem;
+  border-bottom: 0.1rem solid #ebebeb;
+}
+.widget-title {
+  color: #333333;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.7rem;
+}
+.custom-control {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.custom-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.custom-control-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+.custom-control:hover input ~ .custom-control-label::before {
+  border-color: #666;
+}
+.custom-control input:checked ~ .custom-control-label::before {
+  border-color: #007bff;
+  background-color: #007bff;
+}
+.custom-control-label::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.custom-control input:checked ~ .custom-control-label::after {
+  display: block;
+}
+.custom-control-label::after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.custom-control-label {
+  font-weight: 400;
+  color: #333333;
+  cursor: pointer;
+}
+.widget-title a {
+  position: relative;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  padding-right: 3rem;
+}
+.widget-body {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.filter-item {
+  position: relative;
+  margin-bottom: 0.3rem;
+}
+.filter-colors {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 0.7rem;
+  padding-bottom: 0.5rem;
+}
+.filter-colors a {
+  position: relative;
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  border: 0.2rem solid #fff;
+  margin: 0 0.3rem 0.3rem;
+  transition: box-shadow 0.35s ease;
+}
+.filter-colors a:after {
+  color: #fff;
+  font-family: "molla";
+  content: "\ec2d";
+  font-size: 1rem;
+  line-height: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.01s;
+  margin-top: -0.4rem;
+  margin-left: -0.5rem;
+}
+.filter-colors a.selected,
+.filter-colors a:hover,
+.filter-colors a:focus {
+  box-shadow: 0 0 0 0.1rem #cccccc;
+}
+.filter-colors a.selected:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* <---Footer--- >  */
+.footer {
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: #282d32;
+}
+.footer h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+.footer ul a:hover {
+  opacity: 0.8;
+}
+@media (max-width: 767px) {
+  .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+.item.text {
+  margin-bottom: 36px;
+}
+@media (max-width: 767px) {
+  .item.text {
+    margin-bottom: 0;
+  }
+}
+.item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+.item.social {
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+.item.social > a:hover {
+  opacity: 0.9;
+}
+.copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}

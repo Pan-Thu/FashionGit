@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FashionGit - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container-fluid">
+        <a href="index.html">
+          <img src="images/logo(white).png" alt="Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="wishlist.html">
+                <i class="fas fa-heart"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="login.html">
+                <i class="fas fa-user"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="container-fluid banner">
+      <h1 class="display-4">Welcome to FashionGit</h1>
+      <p class="lead">
+        Explore our exclusive collection of clothing for any age and gender.
+      </p>
+      <a href="product.html" class="button">Shop Now</a>
+    </div>
+
+    <!-- Featured Products Section -->
+    <section class="bg-color py-5">
+      <div class="container-fluid home-box">
+        <div class="row">
+          <div class="col-6">
+            <h1>Featured Products</h1>
+          </div>
+          <div class="col-6 text-end">
+            <a href="product.html" class="see-all">See All</a>
+          </div>
+        </div>
+        <div class="featured-boxes">
+          <a
+            href="#"
+            class="featured-box"
+            id="featured-box-1"
+            onclick="currItemPage(products[7])"
+          >
+            <h3>Suits</h3>
+            <p>
+              Step into refined elegance with our remarkable collection of man
+              suits.
+            </p>
+          </a>
+
+          <a
+            href="#"
+            class="featured-box"
+            id="featured-box-2"
+            onclick="currItemPage(products[11])"
+          >
+            <h3>Sneakers</h3>
+            <p>
+              Upgrade your sneaker game with our trendy and comfortable footwear
+              options.
+            </p>
+          </a>
+
+          <a
+            href="#"
+            class="featured-box"
+            id="featured-box-3"
+            onclick="currItemPage(products[3])"
+          >
+            <h3>Jeans</h3>
+            <p>
+              Discover the perfect fit and style with our range of fashionable
+              jeans.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discount Section -->
+    <section class="discount-banner py-3">
+      <h2>Summer Sale</h2>
+      <p>Get 20% off on ALL High Heels.</p>
+      <a href="product.html" class="button">Shop Now</a>
+    </section>
+
+    <!-- New Arrival Section -->
+    <section class="py-3">
+      <div class="container-fluid row home-box">
+        <div class="col-6">
+          <h1>New Arrivals</h1>
+        </div>
+        <div class="col-6 text-end">
+          <a href="product.html" class="see-all">See All</a>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="product text-center">
+            <figure class="product-media">
+              <a href="#" onclick="currItemPage(products[4])">
+                <img
+                  src="images/t-shirt-1-c-1.jpg"
+                  alt="T shirt 1"
+                  class="product-image"
+                />
+              </a>
+            </figure>
+            <div class="product-body">
+              <div class="product-cat">
+                <a href="#">T-shirts</a>
+              </div>
+              <h3 class="product-title">
+                <a href="#" onclick="currItemPage(products[4])"
+                  >V-Neck Short Sleeve Pocket T-Shirt</a
+                >
+              </h3>
+              <div class="product-price">$12.99</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="product text-center">
+            <figure class="product-media">
+              <a href="#" onclick="currItemPage(products[1])">
+                <img
+                  src="images/jean-1-c-1.jpg"
+                  alt="Jean 1"
+                  class="product-image"
+                />
+              </a>
+            </figure>
+            <div class="product-body">
+              <div class="product-cat">
+                <a href="#">Jeans</a>
+              </div>
+              <h3 class="product-title">
+                <a href="#" onclick="currItemPage(products[1])"
+                  >Kick Out Crop Mid Rise Jeans</a
+                >
+              </h3>
+              <div class="product-price">$69.99</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="product text-center">
+            <figure class="product-media">
+              <a href="#" onclick="currItemPage(products[9])">
+                <img
+                  src="images/suit-2-c-1.jpg"
+                  alt="Suit 2"
+                  class="product-image"
+                />
+              </a>
+            </figure>
+            <div class="product-body">
+              <div class="product-cat">
+                <a href="#">Suits</a>
+              </div>
+              <h3 class="product-title">
+                <a href="#" onclick="currItemPage(products[9])"
+                  >Trim Fit Plaid Wool Blend Suit</a
+                >
+              </h3>
+              <div class="product-price">$299.99</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="product text-center">
+            <figure class="product-media">
+              <a href="#" onclick="currItemPage(products[8])">
+                <img
+                  src="images/high-heel-2-c-1.jpg"
+                  alt="High Heel 2"
+                  class="product-image"
+                />
+              </a>
+            </figure>
+            <div class="product-body">
+              <div class="product-cat">
+                <a href="#">High-Heels</a>
+              </div>
+              <h3 class="product-title">
+                <a href="#" onclick="currItemPage(products[8])"
+                  >Tavey Ankle Strap Sandal</a
+                >
+              </h3>
+              <div class="product-price">$59.99</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="product.html">Shopping</a></li>
+              <li><a href="profile.html">Delivery</a></li>
+              <li><a href="cart.html">Payment</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3>About</h3>
+            <ul>
+              <li><a href="aboutus.html">Company</a></li>
+              <li><a href="aboutus.html">Team</a></li>
+              <li><a href="aboutus.html">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <h3>FashionGit</h3>
+            <p>
+              With an extensive collection of the latest clothings, Fashiongit
+              caters to fashion-forward individuals who seek to express their
+              style with confidence. Contact us by -<br />
+              Phone: +09 122 223 1224 <br />
+              Email: fashiongit@support.com
+            </p>
+          </div>
+          <div class="col item social">
+            <a href="https://www.facebook.com"
+              ><i class="icon ion-social-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com"
+              ><i class="icon ion-social-twitter"></i
+            ></a>
+            <a href="https://www.snapchat.com"
+              ><i class="icon ion-social-snapchat"></i
+            ></a>
+            <a href="https://www.instagram.com"
+              ><i class="icon ion-social-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <p class="copyright">FashionGit © 2018</p>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

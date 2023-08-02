@@ -1,0 +1,333 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* <---Navigation Bar--- >  */
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  background-color: #343a40;
+}
+.container-fluid {
+  padding-left: 2rem;
+  padding-right: 5rem;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+}
+.navbar-nav {
+  font-size: 20px;
+}
+.navbar-nav .nav-item .nav-link {
+  transition: 0.1s ease;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #c96;
+}
+.navbar-nav > .nav-item:nth-child(-n + 3) {
+  padding-right: 30px;
+}
+.navbar-nav .nav-link .fas {
+  font-size: 25px;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+/* <---Banner--- >  */
+.banner {
+  background-size: cover;
+  color: #ffffff;
+  font-family: "Dancing Script", cursive;
+  width: 100%;
+  height: 800px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: animate 12s ease-in-out infinite;
+}
+.banner h1 {
+  font-weight: 500;
+  font-size: 100px;
+}
+.banner p {
+  font-weight: 500;
+  font-size: 30px;
+}
+@keyframes animate {
+  0%,
+  100% {
+    background-image: url(images/banner-1.jpg);
+  }
+  25% {
+    background-image: url(images/banner-2.jpg);
+  }
+  50% {
+    background-image: url(images/banner-3.jpg);
+  }
+  75% {
+    background-image: url(images/banner-4.jpg);
+  }
+}
+
+/* <---Home Box--- >  */
+.home-box {
+  padding: 20px 50px;
+  align-items: center;
+}
+.home-box h1 {
+  margin-bottom: 20px;
+}
+.home-box a {
+  text-decoration: none;
+}
+.see-all {
+  text-decoration: none;
+  color: #000000;
+}
+.see-all:hover {
+  color: gray;
+}
+.bg-color {
+  background-color: #cdcdcd;
+}
+.button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  margin: 20px 0px 0px 0px;
+}
+.button:hover {
+  background-color: grey;
+}
+
+/* <---Featured Products--- >  */
+.featured-boxes {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.featured-box {
+  background-color: #f0f0f0;
+  background-size: cover;
+  height: 260px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  text-decoration: none;
+  transition: box-shadow 0.2s ease;
+  @media (max-width: 767px) {
+    height: 180px;
+  }
+}
+.featured-box h3 {
+  font-size: 24px;
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+.featured-box p {
+  font-size: 16px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+.featured-box:hover {
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5);
+}
+#featured-box-1 {
+  background-image: url(images/featured-product-1.jpg);
+}
+#featured-box-2 {
+  background-image: url(images/featured-product-2.jpg);
+}
+#featured-box-3 {
+  background-image: url(images/featured-product-3.jpg);
+}
+
+/* <---New Arrival--- >  */
+.product {
+  position: relative;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.35s ease;
+  background-color: #fff;
+  margin: 10px;
+}
+.product:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+.product-media {
+  margin-bottom: 0;
+}
+.product-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.product-body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  padding: 1.6rem 2rem;
+  background-color: #fff;
+}
+.product-title {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+.product-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.product-title a:hover,
+.product-title a:focus {
+  color: #c96;
+}
+.product-cat {
+  color: #777;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.3rem;
+}
+.product-cat a {
+  color: inherit;
+}
+.product-cat a:hover {
+  color: #c96;
+}
+.product-price {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  color: #c96;
+  margin-bottom: 1.3rem;
+}
+
+/* <--- Discount Banner --- >  */
+.discount-banner {
+  background-image: url(images/discount-banner.jpg);
+  color: #ffffff;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 800px;
+  padding: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.discount-banner h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.discount-banner p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+/* <---Footer--- >  */
+.footer {
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: #282d32;
+}
+.footer h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+.footer ul a:hover {
+  opacity: 0.8;
+}
+@media (max-width: 767px) {
+  .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+.item.text {
+  margin-bottom: 36px;
+}
+@media (max-width: 767px) {
+  .item.text {
+    margin-bottom: 0;
+  }
+}
+.item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+.item.social {
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+.item.social > a:hover {
+  opacity: 0.9;
+}
+.copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
