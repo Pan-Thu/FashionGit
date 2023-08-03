@@ -41,6 +41,9 @@ nav.navbar {
 }
 
 /* <--- Main Content ---> */
+.container {
+  margin-top: 5rem;
+}
 .item-cat {
   display: flex;
   align-items: center;
