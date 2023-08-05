@@ -47,6 +47,9 @@ nav.navbar {
 .bg-color {
   background-color: #eeeeee;
 }
+.margin {
+  margin-top: 5rem;
+}
 .title {
   font-size: 36px;
   font-weight: bold;
